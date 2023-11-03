@@ -1,0 +1,1 @@
+global.door0 = id;

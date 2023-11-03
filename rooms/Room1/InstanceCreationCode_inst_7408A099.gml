@@ -1,0 +1,1 @@
+global.secretStartDoor2 = id;

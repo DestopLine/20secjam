@@ -1,0 +1,1 @@
+global.TrollShortcut2 = id;
