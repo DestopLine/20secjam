@@ -1,5 +1,4 @@
-//make rainbow
-c_rainbow = make_color_hsv ((current_time / room_speed) mod 255,255,255);
+
 var touchingLeft = collision_line(x, y, x - 40, y, oCorrection, false, true);
 var touchingRight = collision_line(x, y, x + 40, y, oCorrection, false, true);
 var touchingUp = collision_line(x, y, x, y - 40, oCorrection, false, true);
@@ -25,13 +24,15 @@ key_left = 0;
 key_up = 0;
 key_down = 0;
 }
-
+if !oCamera.freecam
+{
 //calculate movement
 var move = key_right - key_left;
 var ymove = key_up - key_down;
 
 hsp = (move * walksp)
 vsp = (vsp + grv)
+}
 //i KNOW this should be a switch, ill fix it later.
 if (key_up)
 {

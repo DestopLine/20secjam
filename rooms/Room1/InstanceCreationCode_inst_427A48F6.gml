@@ -1,0 +1,1 @@
+ c_rainbow = make_color_hsv ((current_time / room_speed) mod 255,255,255);
