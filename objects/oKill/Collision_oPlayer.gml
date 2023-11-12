@@ -1,6 +1,4 @@
-game_restart()
-
-
+other.hp--
 
 
 

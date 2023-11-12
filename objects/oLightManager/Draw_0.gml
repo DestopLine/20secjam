@@ -22,7 +22,7 @@ if window_has_focus()
 	// draw lights
 
 	surface_set_target(global.lightSurf);
-	var lightCol = make_color_hsv(coloring, 0, lightStrength * 255);
+	var lightCol = make_color_hsv(coloring, 0, lightStrength * multiplier);
 	draw_sprite_ext(sSmoothLight, -1,x-oCamera.camera.pos[0],y-oCamera.camera.pos[1],radius,radius,1, lightCol + coloring,1);
 	surface_reset_target();
 	gpu_set_blendmode_ext(bm_zero, bm_src_color);

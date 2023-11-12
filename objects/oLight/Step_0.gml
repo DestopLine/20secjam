@@ -14,8 +14,8 @@ if (oGame.started)
 	{
 		if (lavalight)
 		{
-		x = oPlayer.x
-		y = oKill.y-1700
+		x = oKill.x-420
+		y = oKill.y
 		}
 	}
 

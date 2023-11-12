@@ -1,5 +1,5 @@
-show_error("PATA PATA PATA PON",false)
-
+instance_destroy(oWaterfall)
+game_restart()
 
 
 

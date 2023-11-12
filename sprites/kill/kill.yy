@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "kill",
   "bbox_bottom": 63,
-  "bbox_left": 0,
+  "bbox_left": -1,
   "bbox_right": 63,
   "bbox_top": 1,
   "bboxMode": 2,

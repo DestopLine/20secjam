@@ -1,9 +1,12 @@
-
+if (hp <= 0) 
+{
+restart();
+}
 var touchingLeft = collision_line(x, y, x - 40, y, oCorrection, false, true);
 var touchingRight = collision_line(x, y, x + 40, y, oCorrection, false, true);
 var touchingUp = collision_line(x, y, x, y - 40, oCorrection, false, true);
 var touchingDown = collision_line(x, y, x, y + 40, oCorrection, false, true);
-
+touchingLava = collision_line(x, y, x, y + 50, oKill, false, true);
 
 if oGame.timer <= 0
 {
@@ -100,4 +103,18 @@ if (place_meeting(x,y+vsp,oWall))
 }
 y = y + vsp;
 
+if (touchingLava != noone && !wet && vsp !=0)
+{	
+	audio_play_sound(splashin,1,false)
+	splashp()
+	wet = true;
+}
+if touchingLava = noone and wet
+{	
+	
+	audio_play_sound(splashout,1,false)
+	wet = false
 
+	splashp()
+}
+	

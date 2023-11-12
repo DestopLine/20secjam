@@ -1,0 +1,1 @@
+global.FuckingEndDoor1 = id;

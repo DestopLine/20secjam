@@ -1,4 +1,4 @@
-audio_play_sound(dooropen,1,false)
+//audio_play_sound(dooropen,1,false)
 
 
 
