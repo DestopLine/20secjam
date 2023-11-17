@@ -7,7 +7,7 @@ draw_sprite_ext(kill,-1,pos-2,960,bar/2,0.1,image_angle,c_lime,image_alpha)
 
 draw_set_text(c_white,fixedsys, fa_left, fa_top);
 draw_text(75,50,"whatever's speed: " + string(oKill.spd))
-draw_text(75,80,string(oPlayer.hp)+string(oPlayer.wet))
+draw_text(75,80,string(oPlayer.hp)+ " " + string(score))
 draw_text(75,90,"your speed: " + string(oPlayer.walksp))
 if oCamera.freecam
 {
@@ -26,18 +26,19 @@ else
 {
     draw_text(pos, 0, "00 : " + string(seconds));
 }
+ //for whoever reads this code, please forgive me for this
+ //i'm sorry for what you'll have to see next, i really am.
+ 
+ 
+ 
+var heartindex = 0;
+var heartX = 35;
 
-
-
-
-
-
-
-
-
-
-
-
+for (var i = 0; i < oPlayer.hp; i++)
+{
+    draw_sprite_ext(heart, heartindex, heartX, 40, 0.5, 0.5, 0, c_white, 1);
+    heartX += 50;
+}
 
 
 

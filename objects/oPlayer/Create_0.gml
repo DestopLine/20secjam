@@ -11,7 +11,10 @@ xscale = 1;
 yscale = 1;
 hascontrol = true;
 wet = false;
-hp = 60
+hp = 3
 testvar = 0;
+time = 0;
+iframe = false
 //window_set_cursor(cr_none)
-
+facing = "left"
+angle = 90;

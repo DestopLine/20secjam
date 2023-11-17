@@ -21,7 +21,11 @@ if (oGame.started)
 
 }
 
-
+if (follow)
+{
+	x = followho.x
+	y = followho.y
+}
 
 
 

@@ -10,7 +10,7 @@ touchingLava = collision_line(x, y, x, y + 50, oKill, false, true);
 
 if oGame.timer <= 0
 {
-game_restart()	
+hp = 0;
 }
 //get input
 if (hascontrol)
@@ -37,8 +37,13 @@ hsp = (move * walksp)
 vsp = (vsp + grv)
 }
 //i KNOW this should be a switch, ill fix it later.
+//do the pata pata
+var rotaspeed = 50
 if (key_up)
 {
+			image_angle = 360;
+
+	
 		if touchingUp != noone
 		{
 			x = touchingUp.x
@@ -48,7 +53,9 @@ if (key_up)
 	vsp = -walksp;    
 }
 if (key_down)
-{
+{		
+	image_angle = 180;
+		facing = "down";
 		if touchingDown != noone
 		{
 			x = touchingDown.x
@@ -56,24 +63,31 @@ if (key_down)
 		}
 
 	vsp = walksp;    
+
 }
 if (key_left)
-{
+{		
+		image_angle = 90;	
+	facing = "left";
 	if touchingLeft != noone
 		{
 			x = touchingLeft.x
 			y = touchingLeft.y
 		}
+
 }
 if (key_right)
-{
+{		
+		image_angle = -90;
+	
+		
+	facing = "right";
 	if touchingRight != noone
 		{
 			x = touchingRight.x
 			y = touchingRight.y
 		}
 }
-
 
 
 //horizontal collision
@@ -118,3 +132,11 @@ if touchingLava = noone and wet
 	splashp()
 }
 	
+if (iframe){
+    if (time < room_speed * 0.7){
+        time++;
+    } else{
+        iframe = false;
+		time = 0;		
+    }
+}

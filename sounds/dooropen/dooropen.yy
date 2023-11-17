@@ -12,8 +12,8 @@
   "conversionMode": 0,
   "duration": 0.342271,
   "parent": {
-    "name": "20 Second Jam",
-    "path": "20 Second Jam.yyp",
+    "name": "Sounds",
+    "path": "folders/Sounds.yy",
   },
   "preload": false,
   "sampleRate": 44100,

@@ -1,0 +1,1 @@
+global.ToggleLaser1 = id
