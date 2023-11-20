@@ -1,38 +1,8 @@
-if pressed
+if (pressed)
 {
-image_index = 1;	
-	if instance_exists(doorID)
-	{
-	 instance_destroy(doorID)
-	}
+    image_index = 1;	
+    if instance_exists(doorID)
+    {
+        instance_destroy(doorID);
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

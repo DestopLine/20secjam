@@ -1,11 +1,11 @@
 switch (mode)
 {
     case "toggle":
-        if (!on && startfr == frames*2)
+        if (!on && startfr == frames * 2)
         {
             if (startfr <= 0) on = true;
             startfr--;
-			frames = frames;
+            frames = frames;
         }
         
         if (on && !finished)
@@ -30,41 +30,11 @@ switch (mode)
             on = true;
         }
         break;
-		case "spin":
-		image_angle += rotationSpeed
-		break;
-		case "stay":
-		break;
+
+    case "spin":
+        image_angle += rotationSpeed;
+        break;
+
+    case "stay":
+        break;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

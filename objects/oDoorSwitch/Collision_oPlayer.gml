@@ -1,31 +1,5 @@
-if !pressed
+if (!pressed)
 {
-audio_play_sound(doorswitch,1,false)
+    audio_play_sound(doorswitch, 1, false);
 }
 pressed = true;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

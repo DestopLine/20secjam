@@ -1,41 +1,10 @@
-switch value
+switch (value)
 {
-case "gold":
-image_index = 1;
-break;
-case "silver":
-image_index = 0;
+    case "gold":
+        image_index = 1;
+        break;
+        
+    case "silver":
+        image_index = 0;
+        break;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

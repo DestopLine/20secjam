@@ -19,37 +19,3 @@ part_emitter_region(_water, _pemit1, -32, 32, -32, 32, ps_shape_rectangle, ps_di
 part_emitter_stream(_water, _pemit1, _ptype1, 25);
 
 part_system_position(_water, x, y);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

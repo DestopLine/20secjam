@@ -1,52 +1,17 @@
-
-if (instance_exists(oPlayer))
+if (instance_exists(oPlayer) && mainlight)
 {
-	if (mainlight)
-	{
-	x = oPlayer.x
-	y = oPlayer.y
-	}
+    x = oPlayer.x;
+    y = oPlayer.y;
 }
 
-if (oGame.started)
+if (oGame.started && instance_exists(oKill) && lavalight)
 {
-	if (instance_exists(oKill))
-	{
-		if (lavalight)
-		{
-		x = oKill.x-420
-		y = oKill.y
-		}
-	}
-
+    x = oKill.x - 420;
+    y = oKill.y;
 }
 
 if (follow)
 {
-	x = followho.x
-	y = followho.y
+    x = followho.x;
+    y = followho.y;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

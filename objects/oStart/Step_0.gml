@@ -1,34 +1,4 @@
-if pressed
+if (pressed)
 {
-image_index = 1;
+    image_index = 1;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
